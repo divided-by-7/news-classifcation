@@ -1,0 +1,32 @@
+————————————————————————————————————
+环境配置：tensorflow==1.15.2
+	  python==3.7.10
+	  pandas==1.1.5
+	  numpy==1.21
+	  openpyxl==2.5.9
+	  xlrd==1.1.0，已知在2.0.1下报错。
+完整环境：（Package：absl-py==0.13.0；altgraph==0.17；astor==0.8.1；cached-property==1.5.2；certifi==2021.5.30；et-xmlfile==1.1.0；future==0.18.2；gast==0.2.2；google-pasta==0.2.0；grpcio==1.38.1；h5py==3.3.0；importlib-metadata==4.6.1；jdcal==1.4.1；Keras-Applications==1.0.8；Keras-Preprocessing==1.1.2；Markdown==3.3.4；numpy==1.21.0；openpyxl==2.5.9；opt-einsum==3.3.0；pandas==1.1.5；pefile==2021.5.24；pip==21.1.3；protobuf==3.17.3；pyinstaller==4.3；pyinstaller-hooks-contrib==2021.2；python-dateutil==2.8.1；pytz==2021.1；pywin32-ctypes==0.2.0；setuptools== 52.0.0.post20210125；six==1.16.0；tensorboard==1.15.0；tensorflow==1.15.2；tensorflow-estimator==1.15.1；termcolor==1.1.0；typing-extensions==3.10.0.0；Werkzeug==2.0.1；wheel==0.36.2；wincertstore==0.2；wrapt==1.12.1；xlrd==1.1.0；zipp==3.5.0）
+
+以上五个库可通过-------------------------------------------
+			pip install tensorflow==1.15.2
+			pip install openpyxl==2.5.9
+			pip install xlrd==1.1.0
+即可全部安装完成。-----------------------------------------
+
+请确保pb文件、py文件、vocab文件处在同一文件夹下。
+
+
+—————————————————————————————————————————————————
+单条新闻内容分类：
+    进入单新闻预测.py后直接运行程序，待加载约10秒（一般不会超过20秒）后启动GUI窗口。（请注意任务栏，运行后点击其他界面，本程序有可能被最小化）
+—————————————————————————————————————————————————
+批量新闻内容分类：
+    进入多新闻预测.py后直接运行程序，待加载约10秒（一般不会超过20秒）后启动GUI窗口。（请注意任务栏，有可能被最小化）
+    请确保新闻数据为excel格式，格式参照文件夹中的‘测试集.xlsx’,分类完成后将保存在该文件夹下，名为‘result.xlsx’。
+—————————————————————————————————————————————————
+在CPU下（i7），单条新闻平均时间约0.3秒。
+在Google Colab提供的免费GPU（）下，单条新闻平均时间约0.03秒。（）
+建议使用GPU环境运行。需要注意tensorflow1.x对应的CUDA和CuDNN。
+
+
+    
